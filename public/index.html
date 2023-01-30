@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>todo list app</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    ---
+    <br><br><br><br>
+
+    <script>
+      function opencollapse() {
+        document.getElementById('collapseable').style.display = 'block';
+      }
+      function closecollapse() {
+        document.getElementById('collapseable').style.display = 'none';
+      }
+    </script>
+
+    <button onclick="opencollapse()">info</button>
+    <div id="collapseable" class="collapseable">
+      <div class="collapseable-margin">
+        <ul>
+          <p>made by logobot3000</p>
+          <p>v1.0</p>
+        </ul>
+      </div>
+      <button onclick="closecollapse()">collapse</button>
+    </div>
+  </body>
+</html>
